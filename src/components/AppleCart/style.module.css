@@ -1,0 +1,91 @@
+:root {
+  --main-color: #336f9b;
+  --primary-color: #4b9ad7;
+  --primary-light-color: #6dadde;
+  --success-color: #489364;
+  --success-light-color: #61b37f;
+  --gray-color: #bbc3c4;
+}
+
+.container {
+  width: 600px;
+  margin: 24px auto;
+  border: 1px solid #ddd;
+  padding: 24px;
+}
+
+.cart {
+  border: 1px solid #ddd;
+}
+
+.title {
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+  color: var(--main-color);
+}
+
+.stats {
+  display: flex;
+  border-top: 1px dashed #ddd;
+  border-bottom: 1px dashed #ddd;
+}
+.statsItem {
+  width: 50%;
+  padding: 12px;
+}
+.statsItemTitle {
+  color: var(--main-color);
+}
+
+:global(button) {
+  padding: 12px 30px;
+  border-radius: 4px;
+  border: none;
+  color: #fff;
+}
+
+.empty {
+  text-align: center;
+}
+.apple {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid #ddd;
+  margin: 12px 24px;
+}
+.appleHeader {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.appleNameContainer {
+  margin-left: 2em;
+}
+.appleName {
+  color: var(--main-color);
+  font-size: 18px;
+}
+
+.btnPrimary {
+  background-color: var(--primary-color);
+}
+.btnPrimary:hover {
+  background-color: var(--primary-light-color);
+}
+
+.btnSuccess {
+  background-color: var(--success-color);
+  width: 160px;
+}
+.btnSuccess:hover {
+  background-color: var(--success-light-color);
+}
+.btnSuccess.loading {
+  background-color: var(--gray-color);
+}
+.footer {
+  padding: 20px;
+  text-align: center;
+}
